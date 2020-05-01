@@ -363,3 +363,39 @@ The object is already closed [90007-175]
 	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
 	at sql.Sql.deleteAll(Sql.java:38)
 	at main.Main.main(Main.java:18)
+05-01 15:10:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 15:15:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 15:15:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1413)
+	at org.h2.jdbc.JdbcStatement.checkClosed(JdbcStatement.java:980)
+	at org.h2.jdbc.JdbcStatement.checkClosed(JdbcStatement.java:954)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3102)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.getPriceByName(Sql.java:92)
+	at main.Main.main(Main.java:41)

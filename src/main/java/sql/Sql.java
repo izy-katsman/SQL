@@ -41,7 +41,6 @@ public class Sql {
                 statement.executeUpdate("DELETE FROM products WHERE Id = " + id);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
         }
 
         //собираем все записи и по очереди удаляем
