@@ -1,0 +1,365 @@
+05-01 14:44:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:44:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "titel" не найден
+Column "titel" not found [42122-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3047)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3133)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:296)
+	at sql.Sql.filterByPrice(Sql.java:81)
+	at main.Main.main(Main.java:23)
+05-01 14:45:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:46:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:46:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:47:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "UN4" не найден
+Column "UN4" not found; SQL statement:
+SELECT * FROM products where title =un4 [42122-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:144)
+	at org.h2.expression.Comparison.optimize(Comparison.java:179)
+	at org.h2.command.dml.Select.prepare(Select.java:813)
+	at org.h2.command.Parser.prepareCommand(Parser.java:240)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:72)
+	at sql.Sql.getPriceByName(Sql.java:89)
+	at main.Main.main(Main.java:33)
+05-01 14:47:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "UN4" не найден
+Column "UN4" not found; SQL statement:
+SELECT * FROM products where title =un4 [42122-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:144)
+	at org.h2.expression.Comparison.optimize(Comparison.java:179)
+	at org.h2.command.dml.Select.prepare(Select.java:813)
+	at org.h2.command.Parser.prepareCommand(Parser.java:240)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:72)
+	at sql.Sql.getPriceByName(Sql.java:89)
+	at main.Main.main(Main.java:37)
+05-01 14:48:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:48:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "UN4" не найден
+Column "UN4" not found; SQL statement:
+SELECT * FROM products where title =un4 [42122-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:144)
+	at org.h2.expression.Comparison.optimize(Comparison.java:179)
+	at org.h2.command.dml.Select.prepare(Select.java:813)
+	at org.h2.command.Parser.prepareCommand(Parser.java:240)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:72)
+	at sql.Sql.getPriceByName(Sql.java:90)
+	at main.Main.main(Main.java:33)
+05-01 14:49:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "UN4" не найден
+Column "UN4" not found; SQL statement:
+SELECT * FROM products where title =un4 [42122-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:144)
+	at org.h2.expression.Comparison.optimize(Comparison.java:179)
+	at org.h2.command.dml.Select.prepare(Select.java:813)
+	at org.h2.command.Parser.prepareCommand(Parser.java:240)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:72)
+	at sql.Sql.getPriceByName(Sql.java:90)
+	at main.Main.main(Main.java:37)
+05-01 14:50:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:50:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "UN4" не найден
+Column "UN4" not found; SQL statement:
+SELECT * FROM products where title =un4 [42122-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:144)
+	at org.h2.expression.Comparison.optimize(Comparison.java:179)
+	at org.h2.command.dml.Select.prepare(Select.java:813)
+	at org.h2.command.Parser.prepareCommand(Parser.java:240)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:72)
+	at sql.Sql.getPriceByName(Sql.java:90)
+	at main.Main.main(Main.java:33)
+05-01 14:50:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "UN4" не найден
+Column "UN4" not found; SQL statement:
+SELECT * FROM products where title =un4 [42122-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:144)
+	at org.h2.expression.Comparison.optimize(Comparison.java:179)
+	at org.h2.command.dml.Select.prepare(Select.java:813)
+	at org.h2.command.Parser.prepareCommand(Parser.java:240)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:72)
+	at sql.Sql.getPriceByName(Sql.java:90)
+	at main.Main.main(Main.java:37)
+05-01 14:51:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:51:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:51:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:51:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:52:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:52:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:52:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:53:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:53:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:53:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:54:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:54:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:55:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:55:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:55:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:56:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:56:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:56:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:58:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:58:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 14:58:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 14:59:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 15:06:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 15:06:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 15:06:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 15:07:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 15:07:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 15:07:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-175]
+05-01 15:08:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-01 15:09:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
