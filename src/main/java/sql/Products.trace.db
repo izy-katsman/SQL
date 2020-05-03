@@ -399,3 +399,80 @@ Database is already closed (to disable automatic closing at VM shutdown, add ";D
 	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
 	at sql.Sql.getPriceByName(Sql.java:92)
 	at main.Main.main(Main.java:41)
+05-03 11:43:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:23)
+05-03 11:49:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3099)
+	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:119)
+	at sql.Sql.deleteAll(Sql.java:38)
+	at main.Main.main(Main.java:18)
+05-03 12:26:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1410)
+	at org.h2.jdbc.JdbcStatement.checkClosed(JdbcStatement.java:980)
+	at org.h2.jdbc.JdbcStatement.checkClosedForWrite(JdbcStatement.java:965)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:120)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:113)
+	at sql.Sql.addProduct(Sql.java:67)
+	at main.Main.main(Main.java:33)
+05-03 12:26:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1410)
+	at org.h2.jdbc.JdbcStatement.checkClosed(JdbcStatement.java:980)
+	at org.h2.jdbc.JdbcStatement.checkClosed(JdbcStatement.java:954)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:69)
+	at sql.Sql.showAll(Sql.java:116)
+	at main.Main.main(Main.java:65)
+05-03 12:26:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1410)
+	at org.h2.jdbc.JdbcStatement.checkClosed(JdbcStatement.java:980)
+	at org.h2.jdbc.JdbcStatement.checkClosedForWrite(JdbcStatement.java:965)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:120)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:113)
+	at sql.Sql.addProduct(Sql.java:67)
+	at main.Main.main(Main.java:33)
+05-03 12:27:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Объект уже закрыт
+The object is already closed [90007-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.message.DbException.get(DbException.java:138)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1410)
+	at org.h2.jdbc.JdbcStatement.checkClosed(JdbcStatement.java:980)
+	at org.h2.jdbc.JdbcStatement.checkClosedForWrite(JdbcStatement.java:965)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:120)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:113)
+	at sql.Sql.addProduct(Sql.java:67)
+	at main.Main.main(Main.java:33)

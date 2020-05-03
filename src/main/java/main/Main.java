@@ -4,12 +4,17 @@ import product.Product;
 import sql.Sql;
 
 import java.sql.SQLException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
+        boolean flag1 = true;
+        boolean tmp;
         Product product1 = new Product("un4", 10, 2000);
         Product product2 = new Product("un5", 1, 1991);
         Product product3 = new Product("un16", 20, 1900);
+        
+        Scanner in = new Scanner(System.in);
 
         Sql sql = new Sql();
         sql.connectionDB();
@@ -18,28 +23,63 @@ public class Main {
         sql.deleteAll();
 
         sql.addProduct(product1);
-        sql.addProduct(product2);
-        sql.addProduct(product3);
-        sql.filterByPrice(1, 5000);
 
-        boolean flag = sql.addProduct(product1);// должны получить ошибку добавления
-        if(flag)
-            System.out.println("Успешно добавили");
-        else
-            System.out.println("Не смогли добавить");
 
-        sql.filterByPrice(1991, 5000);
+        while(flag1) {
+            try {
+                System.out.println("ведите команду");
+                String str = in.nextLine();
+                String[] splitStr = str.split(" ");
 
-        int price = sql.getPriceByName("un4");
+                switch (splitStr[0]){
+                    case "add":
+                        Product product = new Product(splitStr[1], Integer.parseInt(splitStr[2]), Integer.parseInt(splitStr[3]));
+                        tmp = sql.addProduct(product);
+                        if(tmp)
+                            System.out.println("Товар добавлен");
+                        else
+                            System.out.println("Товар с таким именем уже есть");
+                        break;
+                    case"deleteAll":
+                        sql.deleteAll();
+                        break;
+                    case"filterByPrice":
+                        sql.filterByPrice(Integer.parseInt(splitStr[1]), Integer.parseInt(splitStr[2]));
+                        break;
 
-        sql.deleteByName("un4");
+                    case"getPriceByName":
+                        sql.getPriceByName(splitStr[1]);
+                        break;
 
-        sql.getPriceByName("un4");
+                    case"deleteByName":
+                        tmp = sql.deleteByName(splitStr[1]);
+                        if(tmp)
+                            System.out.println("Товар удален");
+                        else
+                            System.out.println("Товарв с таким именем нет");
+                        break;
+                    case"changePrice":
+                        tmp = sql.changePrice(splitStr[1], Integer.parseInt(splitStr[2]));
+                        if(tmp)
+                            System.out.println("Цена изменена");
+                        else
+                            System.out.println("Нет такого товара");
+                        break;
+                    case "showAll":
+                        sql.showAll();
+                        break;
+                    case"q":
+                        flag1 = false;
+                        break;
+                    default:
+                        System.out.println("Команда не распознана");
+                        break;
+                }
+            }catch (Exception e){
+                System.out.println("Введены не верные параметры в функции");
+            }
 
-        sql.changePrice("un16", 5000);
-
-        sql.getPriceByName("un16");
-
+        }
         sql.closeDB();
     }
 }

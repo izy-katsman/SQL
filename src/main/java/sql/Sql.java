@@ -38,9 +38,11 @@ public class Sql {
             while(resultSet.next()) {
 
                 int id = resultSet.getInt("id");
-                statement.executeUpdate("DELETE FROM products WHERE Id = " + id);
+                connection.createStatement().executeUpdate("DELETE FROM products WHERE Id = " + id);
+               // statement.executeUpdate("DELETE FROM products WHERE Id = " + id);
             }
         } catch (SQLException e) {
+            e.printStackTrace();
         }
 
         //собираем все записи и по очереди удаляем
@@ -107,5 +109,25 @@ public class Sql {
             return false;
         }
         return true;
+    }
+
+    public void showAll(){
+        try {
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM products");
+
+            boolean flag = true;
+            while(resultSet.next()) {
+                flag = false;
+                int id = resultSet.getInt("id");
+                int prodid= resultSet.getInt("prodid");
+                String title =  resultSet.getString("title");
+                int cost = resultSet.getInt("cost");
+                System.out.printf("%d %d %s %d\n", id, prodid, title, cost);
+            }
+            if(flag)
+                System.out.println("Товаров еще нет");
+        } catch (SQLException e) {
+            System.out.println("Нет такого товара");
+        }
     }
 }
