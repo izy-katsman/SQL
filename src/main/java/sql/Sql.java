@@ -24,7 +24,7 @@ public class Sql {
     }
 
     public void createDB() throws SQLException {
-        String sqlCreateDB = "CREATE TABLE IF NOT EXISTS products (Id INT PRIMARY KEY AUTO_INCREMENT, Prodid INT, title VARCHAR(100), cost INT)";
+        String sqlCreateDB = "CREATE TABLE IF NOT EXISTS products (Id INT PRIMARY KEY AUTO_INCREMENT, Prodid INT, title VARCHAR(100) UNIQUE, cost INT)";
         statement = connection.createStatement();
         // создание таблицы
         statement.executeUpdate(sqlCreateDB);
